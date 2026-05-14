@@ -1,0 +1,8 @@
+El Lobo del Bosque||Elimina al lobo alfa del bosque norte||1||80||30
+Ruinas Malditas||Explora las ruinas al este del rio||1||100||50
+La Cueva del Dragon||Derrota al dragon que aterroriza la aldea||3||300||150
+Recuperar el Grimorio||El grimorio fue robado por bandidos||2||150||80
+Torneo del Reino||Participa en el torneo anual del reino||2||200||100
+La Torre Oscura||Infiltrate en la torre del señor oscuro||4||400||200
+Rastro de Sangre||Investiga las desapariciones en el pueblo||1||90||40
+El Portal Roto||Cierra el portal dimensional en el norte||5||500||300

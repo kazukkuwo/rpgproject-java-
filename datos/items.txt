@@ -1,0 +1,8 @@
+Ana@rpg.com||Chiz||Arma||Arco elfico||Arco echo con ramas del arbol sagrado||EPICO||1.0||30||false||8||0
+Ana@rpg.com||Chiz||Pocion||Pocion de Vida Grande||Restaura 80 puntos de vida||RARO||0.3||80||false||VIDA
+carlos@rpg.com||Arthur||Arma||Espada sin luz||Espada gastada que ha experimentado mcuchas batallas||COMUN||3.0||15||false||5||3
+carlos@rpg.com||Arthur||Armadura||Peto de Acero||Proteccion solida para guerreros||COMUN||8.0||12||false||4
+carlos@rpg.com||Arthur||Pocion||Pocion de Vida||Restaura 30 puntos de vida||COMUN||0.2||30||false||VIDA
+carlos@rpg.com||Merlon||Arma||Baston de madera||Baston de madera comun||COMUN||2.0||10||false||4||4
+carlos@rpg.com||Merlon||Armadura||Capa del Mago||Tejida con hilos magicos||RARO||0.5||5||false||0
+carlos@rpg.com||Merlon||Pocion||Pocion de Mana||Restaura 50 puntos de mana||COMUN||0.2||50||false||MANA

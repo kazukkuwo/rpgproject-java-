@@ -1,0 +1,7 @@
+Ana@rpg.com||Chiz||Explorador||2||50||2||130||80||22||20||31||17||0||ACTIVO||2026-05-12||2026-05-12||false
+Ana@rpg.com||Ranni||Arcanista||2||0||2||110||170||18||16||17||13||0||ACTIVO||2026-05-12||2026-05-12||false
+carlos@rpg.com||Arthur||Caballero||2||150||2||170||50||38||25||13||25||0||ACTIVO||2026-05-12||2026-05-12||false
+carlos@rpg.com||Merlon||Arcanista||1||0||1||90||150||8||6||12||8||0||ACTIVO||2026-05-12||2026-05-12||false
+froilan@rpg.com||jhonrpg||Caballero||1||0||1||150||50||20||15||8||20||0||ACTIVO||2026-05-12||2026-05-12||false
+froilan@rpg.com||iphone4||Explorador||3||100||3||150||80||32||30||42||22||130||ACTIVO||2026-05-12||2026-05-12||false
+kzk@rpg.com||kkk||Caballero||1||80||1||150||50||20||15||8||20||30||ACTIVO||2026-05-12||2026-05-12||false

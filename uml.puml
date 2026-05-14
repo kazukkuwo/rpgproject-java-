@@ -1,0 +1,74 @@
+@startuml
+abstract class com.mycompany.rpgproyect.Entidad
+abstract class com.mycompany.rpgproyect.Item
+abstract class com.mycompany.rpgproyect.Personajes
+annotation java.lang.Override
+class com.mycompany.rpgproyect.Arcanista
+class com.mycompany.rpgproyect.Arma
+class com.mycompany.rpgproyect.Armadura
+class com.mycompany.rpgproyect.Caballero
+class com.mycompany.rpgproyect.Explorador
+class com.mycompany.rpgproyect.Inventario
+class com.mycompany.rpgproyect.Jugador
+class com.mycompany.rpgproyect.Menu
+class com.mycompany.rpgproyect.Miscelanea
+class com.mycompany.rpgproyect.Mision
+class com.mycompany.rpgproyect.Persistencia
+class com.mycompany.rpgproyect.Pocion
+class com.mycompany.rpgproyect.RPGproyect
+class com.mycompany.rpgproyect.RegistroMision
+class com.mycompany.rpgproyect.Sistema
+class java.time.LocalDate
+class java.util.ArrayList
+class java.util.Comparator
+class java.util.HashMap
+class java.util.Scanner
+enum com.mycompany.rpgproyect.EstadoMision
+enum com.mycompany.rpgproyect.EstadoPersonaje
+enum com.mycompany.rpgproyect.Rareza
+enum com.mycompany.rpgproyect.TipoItem
+interface com.mycompany.rpgproyect.Equipable
+interface com.mycompany.rpgproyect.Usable
+com.mycompany.rpgproyect.Item --|> com.mycompany.rpgproyect.Entidad
+com.mycompany.rpgproyect.Item ..> java.lang.Override
+com.mycompany.rpgproyect.Personajes --|> com.mycompany.rpgproyect.Entidad
+com.mycompany.rpgproyect.Personajes ..> java.lang.Override
+com.mycompany.rpgproyect.Personajes ..> java.time.LocalDate
+com.mycompany.rpgproyect.Personajes ..> java.util.ArrayList
+com.mycompany.rpgproyect.Arcanista --|> com.mycompany.rpgproyect.Personajes
+com.mycompany.rpgproyect.Arcanista ..> java.lang.Override
+com.mycompany.rpgproyect.Arma --|> com.mycompany.rpgproyect.Item
+com.mycompany.rpgproyect.Arma ..> java.lang.Override
+com.mycompany.rpgproyect.Arma --|> com.mycompany.rpgproyect.Equipable
+com.mycompany.rpgproyect.Armadura --|> com.mycompany.rpgproyect.Item
+com.mycompany.rpgproyect.Armadura ..> java.lang.Override
+com.mycompany.rpgproyect.Armadura --|> com.mycompany.rpgproyect.Equipable
+com.mycompany.rpgproyect.Caballero --|> com.mycompany.rpgproyect.Personajes
+com.mycompany.rpgproyect.Caballero ..> java.lang.Override
+com.mycompany.rpgproyect.Explorador --|> com.mycompany.rpgproyect.Personajes
+com.mycompany.rpgproyect.Explorador ..> java.lang.Override
+com.mycompany.rpgproyect.Inventario ..> java.util.ArrayList
+com.mycompany.rpgproyect.Jugador ..> java.util.ArrayList
+com.mycompany.rpgproyect.Jugador ..> java.util.Comparator
+com.mycompany.rpgproyect.Menu ..> java.util.ArrayList
+com.mycompany.rpgproyect.Menu ..> java.util.Scanner
+com.mycompany.rpgproyect.Miscelanea --|> com.mycompany.rpgproyect.Item
+com.mycompany.rpgproyect.Miscelanea ..> java.lang.Override
+com.mycompany.rpgproyect.Miscelanea --|> com.mycompany.rpgproyect.Usable
+com.mycompany.rpgproyect.Mision --|> com.mycompany.rpgproyect.Entidad
+com.mycompany.rpgproyect.Mision ..> java.lang.Override
+com.mycompany.rpgproyect.Persistencia ..> java.time.LocalDate
+com.mycompany.rpgproyect.Persistencia ..> java.util.ArrayList
+com.mycompany.rpgproyect.Persistencia ..> java.util.HashMap
+com.mycompany.rpgproyect.Pocion --|> com.mycompany.rpgproyect.Item
+com.mycompany.rpgproyect.Pocion ..> java.lang.Override
+com.mycompany.rpgproyect.Pocion --|> com.mycompany.rpgproyect.Usable
+com.mycompany.rpgproyect.RegistroMision ..> java.lang.Override
+com.mycompany.rpgproyect.Sistema ..> java.time.LocalDate
+com.mycompany.rpgproyect.Sistema ..> java.util.ArrayList
+com.mycompany.rpgproyect.Sistema ..> java.util.HashMap
+com.mycompany.rpgproyect.EstadoMision ..> java.lang.Override
+com.mycompany.rpgproyect.EstadoPersonaje ..> java.lang.Override
+com.mycompany.rpgproyect.Rareza ..> java.lang.Override
+com.mycompany.rpgproyect.TipoItem ..> java.lang.Override
+@enduml

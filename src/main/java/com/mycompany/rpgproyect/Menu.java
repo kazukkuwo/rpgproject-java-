@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.rpgproyect;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -41,7 +38,7 @@ public Menu(Sistema sistema) {
         } while (op != 0);
     }
 
-    // ─── REGISTRO ─────────────────────────────────────────────────────────────
+  
 
     private void flujoRegistro() {
         System.out.println("\n--- REGISTRO ---");
@@ -59,7 +56,7 @@ public Menu(Sistema sistema) {
         }
     }
 
-    // ─── LOGIN ────────────────────────────────────────────────────────────────
+    
 
     private void flujoLogin() {
         System.out.println("\n--- INICIO DE SESION ---");
@@ -74,12 +71,7 @@ public Menu(Sistema sistema) {
         }
     }
 
-    // ─── SELECCIÓN DE PERSONAJE ───────────────────────────────────────────────
-
-    /**
-     * Muestra los personajes activos del jugador y le pide que elija uno.
-     * Si no tiene personajes, ofrece crear uno primero.
-     */
+   
     private void flujoSeleccionPersonaje() {
         Jugador j = sistema.getJugadorActual();
         ArrayList<Personajes> lista = j.getPersonajes();
@@ -152,7 +144,7 @@ public Menu(Sistema sistema) {
         System.out.println("  Apodo:      " + j.getApodo());
         System.out.println("  Nombre:     " + j.getNombre() + " " + j.getApellido());
         System.out.println("  Correo:     " + j.getCorreo());
-        System.out.println("  Nacimiento: " + j.getFechaNacimiento());
+        System.out.println("  Nacimiento: " + j.getFechaNacimeinto());
         System.out.println("  Personajes: " + j.getTotalPersonajes() + "/5 " +
                 "(activos:" + j.getPersonajes().size() + " bodega:" + j.getBodega().size() + ")");
         System.out.println("\n  -- Personaje actual --");
@@ -177,7 +169,7 @@ public Menu(Sistema sistema) {
             switch (op) {
                 case 1: listarPersonajes(sistema.getJugadorActual().getPersonajes()); break;
                 case 2: crearPersonaje();     break;
-                case 3: System.out.println(sistema.getPersonajeActivo().fichaCompleta()); break;
+                case 3: System.out.println(sistema.getPersonajeActivo().Ficha()); break;
                 case 4: descartarPersonaje(); break;
                 case 5: bodegaPersonajes();   break;
                 case 6: ordenarPersonajes();  break;
@@ -187,9 +179,9 @@ public Menu(Sistema sistema) {
         } while (op != 0);
     }
 
-    private void listarPersonajes(ArrayList<Personaje> lista) {
+    private void listarPersonajes(ArrayList<Personajes> lista) {
         if (lista.isEmpty()) { System.out.println("  (Sin personajes)"); return; }
-        Personaje actual = sistema.getPersonajeActivo();
+        Personajes actual = sistema.getPersonajeActivo();
         for (int i = 0; i < lista.size(); i++) {
             String marca = lista.get(i) == actual ? " ◄ jugando" : "";
             System.out.println("  " + (i+1) + ". " + lista.get(i).resumen() + marca);
@@ -205,14 +197,14 @@ public Menu(Sistema sistema) {
         System.out.println("\n-- Crear Personaje --");
         System.out.print("Nombre (sin espacios, max 20 chars): ");
         String nombre = sc.nextLine().trim();
-        System.out.println("Clase: 1.Guerrero  2.Mago  3.Arquero");
+        System.out.println("Clase: 1.Caballero  2.Arcanista  3.Explorador");
         System.out.print("Clase: ");
         int clase = leerInt();
         System.out.println(sistema.crearPersonaje(nombre, clase));
     }
 
     private void descartarPersonaje() {
-        ArrayList<Personaje> lista = sistema.getJugadorActual().getPersonajes();
+        ArrayList<Personajes> lista = sistema.getJugadorActual().getPersonajes();
         listarPersonajes(lista);
         if (lista.size() <= 1) {
             System.out.println("Necesitas al menos 1 personaje activo.");
@@ -228,7 +220,7 @@ public Menu(Sistema sistema) {
     }
 
     private void bodegaPersonajes() {
-        ArrayList<Personaje> bodega = sistema.getJugadorActual().getBodega();
+        ArrayList<Personajes> bodega = sistema.getJugadorActual().getBodega();
         System.out.println("\n-- Bodega de Personajes --");
         if (bodega.isEmpty()) { System.out.println("  (Vacia)"); return; }
         for (int i = 0; i < bodega.size(); i++)
@@ -256,7 +248,7 @@ public Menu(Sistema sistema) {
     // ─── MENÚ INVENTARIO ──────────────────────────────────────────────────────
 
     private void menuInventario() {
-        Personaje p = sistema.getPersonajeActivo();
+        Personajes p = sistema.getPersonajeActivo();
         int op;
         do {
             System.out.println("\n-- Inventario de " + p.getNombre() +
@@ -283,7 +275,7 @@ public Menu(Sistema sistema) {
         } while (op != 0);
     }
 
-    private void verItems(Personaje p) {
+    private void verItems(Personajes p) {
         ArrayList<Item> items = p.getInventario().getItems();
         if (items.isEmpty()) { System.out.println("  (Inventario vacio)"); return; }
         for (int i = 0; i < items.size(); i++)
@@ -294,7 +286,7 @@ public Menu(Sistema sistema) {
         System.out.println("\n-- Agregar Item --");
         System.out.print("Nombre: ");      String nombre = sc.nextLine().trim();
         System.out.print("Descripcion: "); String desc   = sc.nextLine().trim();
-        System.out.println("Tipo: 1.Arma  2.Armadura  3.Pocion  4.Miscelaneo");
+        System.out.println("Tipo: 1.Arma  2.Armadura  3.Pocion  4.Miscelanea");
         int tipo = leerInt();
         System.out.println("Rareza: 1.Comun  2.Raro  3.Epico  4.Legendario");
         int rar = leerInt();
@@ -323,35 +315,35 @@ public Menu(Sistema sistema) {
                 break;
             case 4:
                 System.out.print("XP que otorga: "); int xp = leerInt();
-                item = new Miscelaneo(nombre, desc, rareza, peso, xp);
+                item = new Miscelanea(nombre, desc, rareza, peso, xp);
                 break;
             default: System.out.println("Tipo invalido."); return;
         }
         System.out.println(sistema.agregarItem(item));
     }
 
-    private void usarItem(Personaje p) {
+    private void usarItem(Personajes p) {
         verItems(p);
         if (p.getInventario().getItems().isEmpty()) return;
         System.out.print("Numero de item a usar: ");
         System.out.println(sistema.usarItem(leerInt() - 1));
     }
 
-    private void equiparItem(Personaje p) {
+    private void equiparItem(Personajes p) {
         verItems(p);
         if (p.getInventario().getItems().isEmpty()) return;
         System.out.print("Numero de item a equipar: ");
         System.out.println(sistema.equiparItem(leerInt() - 1));
     }
 
-    private void descartarItem(Personaje p) {
+    private void descartarItem(Personajes p) {
         verItems(p);
         if (p.getInventario().getItems().isEmpty()) return;
         System.out.print("Numero de item a descartar: ");
         System.out.println(sistema.descartarItem(leerInt() - 1));
     }
 
-    private void bodegaItems(Personaje p) {
+    private void bodegaItems(Personajes p) {
         ArrayList<Item> bodega = p.getInventario().getBodega();
         System.out.println("\n-- Bodega de Items de " + p.getNombre() + " --");
         if (bodega.isEmpty()) { System.out.println("  (Vacia)"); return; }
@@ -369,7 +361,7 @@ public Menu(Sistema sistema) {
     // ─── MENÚ MISIONES ────────────────────────────────────────────────────────
 
     private void menuMisiones() {
-        Personaje p = sistema.getPersonajeActivo();
+        Personajes p = sistema.getPersonajeActivo();
         int op;
         do {
             System.out.println("\n-- Misiones de " + p.getNombre() +
@@ -406,7 +398,7 @@ public Menu(Sistema sistema) {
         System.out.println(sistema.aceptarMision(leerInt() - 1));
     }
 
-    private void completarMision(Personaje p) {
+    private void completarMision(Personajes p) {
         ArrayList<Mision> cat = sistema.getCatalogo();
         ArrayList<Integer> enProgreso = new ArrayList<>();
         for (int i = 0; i < cat.size(); i++) {
@@ -422,7 +414,7 @@ public Menu(Sistema sistema) {
         System.out.println(sistema.completarMision(enProgreso.get(sel)));
     }
 
-    private void verHistorial(Personaje p) {
+    private void verHistorial(Personajes p) {
         ArrayList<RegistroMision> hist = p.getHistorialMisiones();
         System.out.println("\n-- Historial de " + p.getNombre() + " --");
         if (hist.isEmpty()) { System.out.println("  (Sin misiones)"); return; }

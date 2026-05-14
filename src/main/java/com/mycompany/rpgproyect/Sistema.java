@@ -98,7 +98,8 @@ public class Sistema {
         
         
     }
-     public String registrarJugador(String apodo, String nombre, String apellido,
+    
+    public String registrarJugador(String apodo, String nombre, String apellido,
                                    String correo, String fechaNac) {
         if (jugadores.containsKey(correo))
             return "ERROR: Ya existe una cuenta con ese correo.";
@@ -133,7 +134,6 @@ public class Sistema {
         personajeActivo = null;
     }
 
-    // ─── PERSONAJES ───────────────────────────────────────────────────────────
 
     public String crearPersonaje(String nombre, int clase) {
         Personajes p;
