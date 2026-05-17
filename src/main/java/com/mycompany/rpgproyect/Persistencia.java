@@ -1,5 +1,10 @@
 
 package com.mycompany.rpgproyect;
+import com.mycompany.rpgproyect.inventario.Inventario;
+import com.mycompany.rpgproyect.inventario.Item;
+import com.mycompany.rpgproyect.pjs.Explorador;
+import com.mycompany.rpgproyect.pjs.Caballero;
+import com.mycompany.rpgproyect.pjs.Arcanista;
 import java.io.*;
 import java.time.LocalDate;
 import java.util.ArrayList;

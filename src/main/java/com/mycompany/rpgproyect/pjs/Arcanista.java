@@ -1,5 +1,7 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.pjs;
+
+import com.mycompany.rpgproyect.Personajes;
 
 /**
  *
@@ -8,7 +10,7 @@ package com.mycompany.rpgproyect;
 public class Arcanista extends Personajes {
     private int magia;
     public Arcanista(String nombre){
-        super(nombre,90,150,8,6,12,20.0);
+        super(nombre,90,150,8,6,13,20.0);
         this.magia = 30;
     }
     

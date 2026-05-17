@@ -1,5 +1,6 @@
 
 package com.mycompany.rpgproyect;
+import com.mycompany.rpgproyect.inventario.Item;
 import java.util.Scanner;
 import java.util.ArrayList;
 

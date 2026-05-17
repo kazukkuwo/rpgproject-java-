@@ -8,10 +8,10 @@ com/mycompany/rpgproyect/EstadoMision.class
 com/mycompany/rpgproyect/EstadoPersonaje.class
 com/mycompany/rpgproyect/Arma.class
 com/mycompany/rpgproyect/TipoItem.class
-com/mycompany/rpgproyect/Arcanista.class
 com/mycompany/rpgproyect/Mision.class
 com/mycompany/rpgproyect/Persistencia.class
 com/mycompany/rpgproyect/Explorador.class
 com/mycompany/rpgproyect/RegistroMision.class
 com/mycompany/rpgproyect/Usable.class
 com/mycompany/rpgproyect/Miscelanea.class
+com/mycompany/rpgproyect/pjs/Arcanista.class

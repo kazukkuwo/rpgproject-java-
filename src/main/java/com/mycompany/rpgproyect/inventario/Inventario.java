@@ -1,5 +1,9 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.inventario;
+import com.mycompany.rpgproyect.Equipable;
+import com.mycompany.rpgproyect.Personajes;
+import com.mycompany.rpgproyect.Usable;
+import com.mycompany.rpgproyect.inventario.Item;
 import java.util.ArrayList;
 /**
  *

@@ -1,5 +1,6 @@
 
 package com.mycompany.rpgproyect;
+import com.mycompany.rpgproyect.inventario.Inventario;
 import java.time.LocalDate;
 import java.util.ArrayList;
 /**
