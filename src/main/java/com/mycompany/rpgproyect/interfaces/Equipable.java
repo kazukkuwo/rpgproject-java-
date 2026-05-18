@@ -1,5 +1,7 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.interfaces;
+
+import com.mycompany.rpgproyect.pjs.Personajes;
 
 /**
  *

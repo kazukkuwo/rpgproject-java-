@@ -1,8 +1,8 @@
 
 package com.mycompany.rpgproyect.inventario;
-import com.mycompany.rpgproyect.Equipable;
-import com.mycompany.rpgproyect.Personajes;
-import com.mycompany.rpgproyect.Usable;
+import com.mycompany.rpgproyect.interfaces.Equipable;
+import com.mycompany.rpgproyect.pjs.Personajes;
+import com.mycompany.rpgproyect.interfaces.Usable;
 import com.mycompany.rpgproyect.inventario.Item;
 import java.util.ArrayList;
 /**
@@ -78,7 +78,7 @@ public class Inventario {
         }
         Item item = bodega.get(indice);
         String resultado = agregarItem(item);
-        if(resultado.equals("Irem "+ item.getNombre()+ " agregado.")){
+        if(resultado.equals("item "+ item.getNombre()+ " agregado al inventario.")){
             bodega.remove(indice);
             
         }

@@ -1,6 +1,8 @@
 
 package com.mycompany.rpgproyect;
 
+import com.mycompany.rpgproyect.pjs.Personajes;
+import com.mycompany.rpgproyect.enums.EstadoPersonaje;
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -32,7 +34,7 @@ public class Jugador {
     //metodo que genera la clave
     private String generarClave(String nombre, String apellido, String apodo){
         String iN = String.valueOf(nombre.charAt(0)).toUpperCase();
-        String iA = String.valueOf(apellido.charAt(0)).toUpperCase();
+        String iA = String.valueOf(apellido.charAt(0)).toLowerCase();
         return iN + iA + apodo;
     }
     //metodo que agrega personajes

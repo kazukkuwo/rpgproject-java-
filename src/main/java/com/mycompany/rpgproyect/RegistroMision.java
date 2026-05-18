@@ -1,6 +1,8 @@
 
 package com.mycompany.rpgproyect;
 
+import com.mycompany.rpgproyect.Sistemas.EstadoMision;
+
 /**
  *
  * @author vpino

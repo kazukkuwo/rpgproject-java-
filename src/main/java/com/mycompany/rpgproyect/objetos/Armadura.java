@@ -1,6 +1,10 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.objetos;
 
+import com.mycompany.rpgproyect.pjs.Personajes;
+import com.mycompany.rpgproyect.interfaces.Equipable;
+import com.mycompany.rpgproyect.enums.TipoItem;
+import com.mycompany.rpgproyect.enums.Rareza;
 import com.mycompany.rpgproyect.inventario.Item;
 
 /**

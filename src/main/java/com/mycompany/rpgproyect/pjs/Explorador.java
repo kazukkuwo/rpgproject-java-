@@ -1,8 +1,6 @@
 
 package com.mycompany.rpgproyect.pjs;
 
-import com.mycompany.rpgproyect.Personajes;
-
 /**
  *
  * @author vpino

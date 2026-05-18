@@ -1,5 +1,15 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.Sistemas;
+import com.mycompany.rpgproyect.objetos.Arma;
+import com.mycompany.rpgproyect.objetos.Armadura;
+import com.mycompany.rpgproyect.enums.EstadoPersonaje;
+import com.mycompany.rpgproyect.Jugador;
+import com.mycompany.rpgproyect.objetos.Miscelanea;
+import com.mycompany.rpgproyect.Mision;
+import com.mycompany.rpgproyect.pjs.Personajes;
+import com.mycompany.rpgproyect.objetos.Pocion;
+import com.mycompany.rpgproyect.enums.Rareza;
+import com.mycompany.rpgproyect.RegistroMision;
 import com.mycompany.rpgproyect.inventario.Inventario;
 import com.mycompany.rpgproyect.inventario.Item;
 import com.mycompany.rpgproyect.pjs.Explorador;

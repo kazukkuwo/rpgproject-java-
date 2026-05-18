@@ -1,5 +1,9 @@
 
-package com.mycompany.rpgproyect;
+package com.mycompany.rpgproyect.pjs;
+import com.mycompany.rpgproyect.Entidad;
+import com.mycompany.rpgproyect.RegistroMision;
+import com.mycompany.rpgproyect.Sistemas.EstadoMision;
+import com.mycompany.rpgproyect.enums.EstadoPersonaje;
 import com.mycompany.rpgproyect.inventario.Inventario;
 import java.time.LocalDate;
 import java.util.ArrayList;

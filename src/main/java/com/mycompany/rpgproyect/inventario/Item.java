@@ -2,8 +2,8 @@
 package com.mycompany.rpgproyect.inventario;
 
 import com.mycompany.rpgproyect.Entidad;
-import com.mycompany.rpgproyect.Rareza;
-import com.mycompany.rpgproyect.TipoItem;
+import com.mycompany.rpgproyect.enums.Rareza;
+import com.mycompany.rpgproyect.enums.TipoItem;
 
 /**
  *
